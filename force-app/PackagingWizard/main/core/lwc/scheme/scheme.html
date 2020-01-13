@@ -1,0 +1,45 @@
+<template>
+    <div class="pw-scheme-col" data-name="git" data-title={labels.titles.git}>
+        <div class={branchCls}>
+            {labels.qa.branch}
+            <div class="pw-scheme-arrow pw-scheme-arrow__revert"></div>
+        </div>
+        <div class={branchCls}>
+            {labels.staging.branch}
+            <div class="pw-scheme-arrow pw-scheme-arrow__revert"></div>
+        </div>
+    </div>
+    <div class="pw-scheme-col" data-name="heroku" data-title={labels.titles.heroku}>
+        <div class={piplineCls}>
+            {labels.qa.app}
+            <div class="pw-scheme-arrow pw-scheme-arrow__up-20"></div>
+        </div>
+        <div class={piplineCls}>
+            {labels.staging.app}
+            <div class="pw-scheme-arrow pw-scheme-arrow__down-20"></div>
+        </div>
+    </div>
+    <div class="pw-scheme-col" data-name="" data-title="">
+        <div class={scratchCls}>
+            {labels.scratchOrg}
+            <div class="pw-scheme-arrow pw-scheme-arrow__down-20">
+                <span>{labels.unlockedPackage}</span>
+            </div>
+        </div>
+        <div class={devhubCls}>
+            {labels.devHub}
+            <div class="pw-scheme-arrow pw-scheme-arrow__up"></div>
+            <div class="pw-scheme-arrow pw-scheme-arrow__down"></div>
+        </div>
+        <div class={scratchCls}>
+            {labels.scratchOrg}
+            <div class="pw-scheme-arrow pw-scheme-arrow__up-20">
+                <span>{labels.managedPackage}</span>
+            </div>
+        </div>
+    </div>
+    <div class="pw-scheme-col" data-name="sf" data-title={labels.titles.sf}>
+        <div class={qaCls}>{labels.qa.org}</div>
+        <div class={stagingCls}>{labels.staging.org}</div>
+    </div>
+</template>

@@ -1,0 +1,73 @@
+<template>
+    <img src={headerLogo} alt="Packaging Wizard" />
+    <header class="slds-theme_shade slds-p-around_medium slds-m-bottom_small" if:true={showSteps}>
+        <div>
+            <div class="slds-grid slds-grid_align-spread slds-p-bottom_x-small" id="progress-bar-label">
+                <span>{labels.completeDescription}</span>
+                <span aria-hidden="true">
+                    <strong>{progress.percent} {labels.complete}</strong>
+                </span>
+            </div>
+            <div
+                class="slds-progress-bar slds-progress-bar_circular"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                data-rerender={rerender}
+                aria-valuenow={progress.number}
+                aria-labelledby="progress-bar-label"
+                role="progressbar"
+            >
+                <span
+                    class="slds-progress-bar__value slds-progress-bar__value_success"
+                    data-rerender={rerender}
+                    style={progress.style}
+                >
+                    <span class="slds-assistive-text">{labels.progress} {progress.percent}</span>
+                </span>
+            </div>
+        </div>
+    </header>
+    <c-scheme
+        connect={subsProgress.connect}
+        pipeline={subsProgress.pipeline}
+        git={subsProgress.git}
+        repo={subsProgress.repo}
+        branches={subsProgress.branches}
+        devhub={subsProgress.devhub}
+        qa={subsProgress.qa}
+        staging={subsProgress.staging}
+        package={subsProgress.package}
+    ></c-scheme>
+    <ol if:true={showSteps}>
+        <c-orgs
+            inx={steps.namedList.org.inx}
+            title={steps.namedList.org.title}
+            desc={steps.namedList.org.description}
+            name={steps.namedList.org.name}
+            disabled={steps.namedList.org.disabled}
+            onchangeprogress={handleStepProgress}
+        >
+        </c-orgs>
+        <c-heroku
+            inx={steps.namedList.heroku.inx}
+            title={steps.namedList.heroku.title}
+            desc={steps.namedList.heroku.description}
+            name={steps.namedList.heroku.name}
+            disabled={steps.namedList.heroku.disabled}
+            onchangeprogress={handleStepProgress}
+        >
+        </c-heroku>
+    </ol>
+    <header class="slds-modal__header slds-theme_error slds-theme_alert-texture" if:false={isDevHub}>
+        <h2 class="slds-text-heading_medium">
+            {errorCurrentIsNotDevHubBeforeLink}
+            <a href={enableDevHub}>{labels.errorCurrentIsNotDevHubLink}</a> {errorCurrentIsNotDevHubAfterLink}
+        </h2>
+    </header>
+    <footer>
+        <a href={copyright.href} target="_blank">{copyright.text}</a>
+    </footer>
+    <c-spinner></c-spinner>
+    <c-modal></c-modal>
+    <c-sf-connect></c-sf-connect>
+</template>

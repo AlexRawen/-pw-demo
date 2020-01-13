@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>complete</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Complete</shortDescription>
+        <value>Complete</value>
+    </labels>
+    <labels>
+        <fullName>completeDescription</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Complete description</shortDescription>
+        <value>Complete all the steps below to finish setting up Packaging Wizard</value>
+    </labels>
+    <labels>
+        <fullName>progress</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Progress</shortDescription>
+        <value>Progress:</value>
+    </labels>
+    <labels>
+        <fullName>errorCurrentIsNotDevHub</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error: Current Org is not Dev Hub</shortDescription>
+        <value>Current Org is not Dev Hub, please {0} in Your Org or install the
+        package on Dev Hub Org</value>
+    </labels>
+    <labels>
+        <fullName>errorCurrentIsNotDevHubLink</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error: Current Org is not Dev Hub - link</shortDescription>
+        <value>enable Dev Hub</value>
+    </labels>
+    <labels>
+        <fullName>copyright</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Footer copyright</shortDescription>
+        <value>Copyright © {0} Aquiva Labs, Inc. All Rights Reserved.</value>
+    </labels>
+    <labels>
+        <fullName>orgLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for Org step</shortDescription>
+        <value>Connect Salesforce environments</value>
+    </labels>
+    <labels>
+        <fullName>orgDescription</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description for Org step</shortDescription>
+        <value>Establish connection with Salesforce environments which will be used into continious integration pipeline.</value>
+    </labels>
+    <labels>
+        <fullName>devhubLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for DevHub step</shortDescription>
+        <value>DevHub</value>
+    </labels>
+    <labels>
+        <fullName>devhubDescription</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description for DevHub step</shortDescription>
+        <value>Current organization’s credentials which will be used as a DevHub</value>
+    </labels>
+    <labels>
+        <fullName>qaLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for QA step</shortDescription>
+        <value>QA</value>
+    </labels>
+    <labels>
+        <fullName>qaDescription</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description for QA step</shortDescription>
+        <value>Organization which will be used for manual testing activities during development</value>
+    </labels>
+    <labels>
+        <fullName>stagingLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for Staging step</shortDescription>
+        <value>Staging</value>
+    </labels>
+    <labels>
+        <fullName>stagingDescription</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description for Staging step</shortDescription>
+        <value>Organization which will be used for the acceptance testing before distribution</value>
+    </labels>
+    <labels>
+        <fullName>packageLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for Package step</shortDescription>
+        <value>Package settings</value>
+    </labels>
+    <labels>
+        <fullName>herokuLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for Heroku step</shortDescription>
+        <value>Setup Heroku</value>
+    </labels>
+    <labels>
+        <fullName>herokuDescription</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description for Heroku step</shortDescription>
+        <value>Establish connection with your Heroku account where continious integration pipeline will be provisioned.</value>
+    </labels>
+    <labels>
+        <fullName>new</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>errHerokuLink</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Heroku link</shortDescription>
+        <value>Failed to get OAuth Heroku link</value>
+    </labels>
+    <labels>
+        <fullName>errHerokuExchangeCode</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Heroku ExchangeCode</shortDescription>
+        <value>OAuth code does not connect to Packaging Wizard</value>
+    </labels>
+    <labels>
+        <fullName>errHerokuUserInfo</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Heroku userInfo</shortDescription>
+        <value>Failed to get Heroku user information</value>
+    </labels>
+    <labels>
+        <fullName>errHerokuRevoke</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Heroku revoke</shortDescription>
+        <value>Revoke token failed</value>
+    </labels>
+    <labels>
+        <fullName>errOrgsAuthorization</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Authorization error</shortDescription>
+        <value>Authorization error</value>
+    </labels>
+    <labels>
+        <fullName>errOrgsConnection</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Salesforce connection error</shortDescription>
+        <value>Salesforce connection error</value>
+    </labels>
+    <labels>
+        <fullName>errOrgsSavePackage</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save Package data error</shortDescription>
+        <value>Save Package data error</value>
+    </labels>
+    <labels>
+        <fullName>errOrgsOrgInfo</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Getting Org info error</shortDescription>
+        <value>Getting Org info error</value>
+    </labels>
+    <labels>
+        <fullName>errOrgsPackageSettings</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Saving package settings error</shortDescription>
+        <value>Saving package settings error</value>
+    </labels>
+    <labels>
+        <fullName>errOrgsAuthInfo</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Getting Authorizations info error</shortDescription>
+        <value>Getting Authorizations info error</value>
+    </labels>
+    <labels>
+        <fullName>namespaceLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for createNamespace component</shortDescription>
+        <value>NameSpace</value>
+    </labels>
+    <labels>
+        <fullName>namespacePlaceholder</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Placeholder for createNamespace component</shortDescription>
+        <value>Select NameSpace</value>
+    </labels>
+    <labels>
+        <fullName>nameLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for name component</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>namePlaceholder</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Placeholder for name component</shortDescription>
+        <value>Enter name</value>
+    </labels>
+    <labels>
+        <fullName>createNamespaceLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for createNamespace component</shortDescription>
+        <value>Create namespace</value>
+    </labels>
+    <labels>
+        <fullName>createNamespaceTitle</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Title for createNamespace component</shortDescription>
+        <value>First you need to create a namespace</value>
+    </labels>
+    <labels>
+        <fullName>connectTo</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Connect to</shortDescription>
+        <value>Connect to</value>
+    </labels>
+    <labels>
+        <fullName>saving</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Saving</shortDescription>
+        <value>Saving...</value>
+    </labels>
+    <labels>
+        <fullName>saveSuccess</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save successfully</shortDescription>
+        <value>Save successfully!</value>
+    </labels>
+    <labels>
+        <fullName>connectToSF</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Connect to Salesforce</shortDescription>
+        <value>Connect to Salesforce</value>
+    </labels>
+    <labels>
+        <fullName>cancel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>create</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create</shortDescription>
+        <value>Create</value>
+    </labels>
+    <labels>
+        <fullName>delete</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>connect</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Connect</shortDescription>
+        <value>Connect</value>
+    </labels>
+    <labels>
+        <fullName>apply</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Apply</shortDescription>
+        <value>Apply</value>
+    </labels>
+    <labels>
+        <fullName>yes</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Yes</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>revokeTokenFor</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>revoke token for</shortDescription>
+        <value>Are you sure you want revoke token for {0}?</value>
+    </labels>
+    <labels>
+        <fullName>connectedAs</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Connected as</shortDescription>
+        <value>Connected as</value>
+    </labels>
+    <labels>
+        <fullName>username</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Username</shortDescription>
+        <value>Username</value>
+    </labels>
+    <labels>
+        <fullName>password</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Password</shortDescription>
+        <value>Password</value>
+    </labels>
+    <labels>
+        <fullName>securityToken</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Security token</shortDescription>
+        <value>Security token</value>
+    </labels>
+    <labels>
+        <fullName>isSandbox</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Is sandbox</shortDescription>
+        <value>Is sandbox</value>
+    </labels>
+    <labels>
+        <fullName>close</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>loading</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Loading</shortDescription>
+        <value>Loading</value>
+    </labels>
+    <labels>
+        <fullName>schemeQABranch</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QA Branch</shortDescription>
+        <value>QA Branch (develop)</value>
+    </labels>
+    <labels>
+        <fullName>schemeStagingBranch</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Staging Branch</shortDescription>
+        <value>Staging Branch (release)</value>
+    </labels>
+    <labels>
+        <fullName>schemeQAApp</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QA Application</shortDescription>
+        <value>QA Application</value>
+    </labels>
+    <labels>
+        <fullName>schemeStagingApp</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Staging Application</shortDescription>
+        <value>Staging Application</value>
+    </labels>
+    <labels>
+        <fullName>schemeScratchOrg</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Scratch Org</shortDescription>
+        <value>Scratch Org</value>
+    </labels>
+    <labels>
+        <fullName>schemeDevHub</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Dev Hub</shortDescription>
+        <value>Dev Hub</value>
+    </labels>
+    <labels>
+        <fullName>schemeQAOrg</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Shared QA Org</shortDescription>
+        <value>Shared QA Org</value>
+    </labels>
+    <labels>
+        <fullName>schemeStagingOrg</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Staging Org</shortDescription>
+        <value>Staging Org</value>
+    </labels>
+    <labels>
+        <fullName>schemeGitTitle</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>GitHub</shortDescription>
+        <value>GitHub</value>
+    </labels>
+    <labels>
+        <fullName>schemeHerokuTitle</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Heroku pipeline</shortDescription>
+        <value>Heroku pipeline</value>
+    </labels>
+    <labels>
+        <fullName>schemeSalesforceTitle</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Salesforce</shortDescription>
+        <value>Salesforce</value>
+    </labels>
+    <labels>
+        <fullName>schemeUnlockedPackage</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unlocked Package</shortDescription>
+        <value>Unlocked Package</value>
+    </labels>
+    <labels>
+        <fullName>schemeManagedPackage</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Managed Package</shortDescription>
+        <value>Managed Package</value>
+    </labels>
+    <labels>
+        <fullName>fromBranchLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>From branch</shortDescription>
+        <value>From branch</value>
+    </labels>
+    <labels>
+        <fullName>fromBranchPlaceholder</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select branch</shortDescription>
+        <value>Select branch</value>
+    </labels>
+    <labels>
+        <fullName>newBranchLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Branch name</shortDescription>
+        <value>Branch name</value>
+    </labels>
+    <labels>
+        <fullName>newBranchPlaceholder</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enter new branch name</shortDescription>
+        <value>Enter new branch name</value>
+    </labels>
+    <labels>
+        <fullName>toggleDetails</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Toggle details</shortDescription>
+        <value>Toggle details</value>
+    </labels>
+    <labels>
+        <fullName>errHerokuBranchNotFound</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Branch name not found</shortDescription>
+        <value>Branch name not found!</value>
+    </labels>
+    <labels>
+        <fullName>errHerokuRepositoryNotFound</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>>Repository name not found</shortDescription>
+        <value>Repository name not found!</value>
+    </labels>
+    <labels>
+        <fullName>createNewBranch</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create new branch</shortDescription>
+        <value>Create new branch</value>
+    </labels>
+    <labels>
+        <fullName>createNewRepository</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create new repository</shortDescription>
+        <value>Create new repository</value>
+    </labels>
+    <labels>
+        <fullName>repositoryName</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Repository name</shortDescription>
+        <value>Repository name</value>
+    </labels>
+    <labels>
+        <fullName>createRepository</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create a repository...</shortDescription>
+        <value>Create a repository...</value>
+    </labels>
+    <labels>
+        <fullName>errHerokuCreateRepository</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create repository error</shortDescription>
+        <value>Create repository error</value>
+    </labels>
+    <labels>
+        <fullName>createBranch</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Creating new branch...</shortDescription>
+        <value>Creating new branch...</value>
+    </labels>
+    <labels>
+        <fullName>errHerokuCreateBranch</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create new branch error</shortDescription>
+        <value>Create new branch error</value>
+    </labels>
+    <labels>
+        <fullName>applyingRepository</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Applying repository...</shortDescription>
+        <value>Applying repository...</value>
+    </labels>
+    <labels>
+        <fullName>errHerokuApplyingRepository</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Apply repo error</shortDescription>
+        <value>Apply repo error</value>
+    </labels>
+    <labels>
+        <fullName>applyingBranches</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Applying branches...</shortDescription>
+        <value>Applying branches...</value>
+    </labels>
+    <labels>
+        <fullName>errHerokuApplyingBranches</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save setup data error</shortDescription>
+        <value>Save setup data error</value>
+    </labels>
+    <labels>
+        <fullName>creatingPipeline</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Creating pipeline...</shortDescription>
+        <value>Creating pipeline...</value>
+    </labels>
+    <labels>
+        <fullName>errHerokuCreatingPipeline</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create pipeline error</shortDescription>
+        <value>Create pipeline error</value>
+    </labels>
+    <labels>
+        <fullName>deletingPipeline</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Deleting pipeline...</shortDescription>
+        <value>Deleting pipeline...</value>
+    </labels>
+    <labels>
+        <fullName>errHerokuDeletingPipeline</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete pipeline error</shortDescription>
+        <value>Delete pipeline error</value>
+    </labels>
+    <labels>
+        <fullName>revokeHeroku</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Confirmation for Heroku disconnect</shortDescription>
+        <value>If you already provisioned CI pipeline into further steps - it will be deleted after removing association with Heroku account.</value>
+    </labels>
+    <labels>
+        <fullName>areYouSure</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>General confirmation question</shortDescription>
+        <value>Are you sure?</value>
+    </labels>
+    <labels>
+        <fullName>removePipeline</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Confirmation for Heroku Pipeline delete</shortDescription>
+        <value>Heroku pipeline will be deleted.</value>
+    </labels>
+    <labels>
+        <fullName>setupCompleted</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Setup completed!</shortDescription>
+        <value>Setup completed!</value>
+    </labels>
+
+    <labels>
+        <fullName>connectLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for Connect step</shortDescription>
+        <value>Connect Heroku</value>
+    </labels>
+    <labels>
+        <fullName>connectDescription</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description for Connect step</shortDescription>
+        <value>Heroku account which will host CI pipeline</value>
+    </labels>
+    <labels>
+        <fullName>pipelineLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for Pipeline step</shortDescription>
+        <value>Pipeline</value>
+    </labels>
+    <labels>
+        <fullName>pipelineDescription</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description for Pipeline step</shortDescription>
+        <value>Provision CI pipeline</value>
+    </labels>
+    <labels>
+        <fullName>gitLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for Git step</shortDescription>
+        <value>GitHub</value>
+    </labels>
+    <labels>
+        <fullName>gitDescription</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description for Git step</shortDescription>
+        <value>Connected GitHub account</value>
+    </labels>
+    <labels>
+        <fullName>repoLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for Repo step</shortDescription>
+        <value>Repository</value>
+    </labels>
+    <labels>
+        <fullName>selectRepositoryLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for Select repository</shortDescription>
+        <value>Select repository</value>
+    </labels>
+    <labels>
+        <fullName>selectRepositoryPlaceholder</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Placeholder for Select repository</shortDescription>
+        <value>Select repository</value>
+    </labels>
+    <labels>
+        <fullName>branchesLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for Branches step</shortDescription>
+        <value>Branches</value>
+    </labels>
+
+    <labels>
+        <fullName>qaBranchLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for QA Branch</shortDescription>
+        <value>QA Branch</value>
+    </labels>
+    <labels>
+        <fullName>qaBranchPlaceholder</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Placeholder for QA Branch</shortDescription>
+        <value>Select branch</value>
+    </labels>
+
+    <labels>
+        <fullName>stagingBranchLabel</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for Staging Branch</shortDescription>
+        <value>Staging Branch</value>
+    </labels>
+    <labels>
+        <fullName>stagingBranchPlaceholder</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Placeholder for Staging Branch</shortDescription>
+        <value>Select branch</value>
+    </labels>
+    <labels>
+        <fullName>openPipeline</fullName>
+        <categories>Packaging Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label for open pipeline link</shortDescription>
+        <value>Open pipeline</value>
+    </labels>
+</CustomLabels>

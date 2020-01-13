@@ -1,0 +1,70 @@
+.slds-progress__item:not(.slds-is-completed) + .slds-progress__item:not(.slds-is-completed):before {
+    background-color: rgb(221, 219, 218);
+    opacity: 1;
+}
+.slds-progress__item.slds-is-completed + .slds-progress__item:before,
+.slds-progress__item.slds-is-active:before {
+    opacity: 0.3;
+    background-color: rgb(75, 202, 129);
+}
+.slds-progress__item_content {
+    align-items: stretch;
+}
+:host > li.slds-progress__item {
+    width: 100%;
+}
+
+.slds-progress__item_content[data-name="repo"] .substep__data-line c-adv-combobox {
+    margin-top: 0;
+    flex-basis: 100%;
+}
+.slds-progress__item_content[data-name="repo"] .substep__data-line c-adv-combobox[data-name="qaBranch"],
+.slds-progress__item_content[data-name="repo"] .substep__data-line c-adv-combobox[data-name="stagingBranch"] {
+    flex-basis: calc(50% - 5px);
+    margin-top: 5px;
+}
+
+.substep__title {
+    font-weight: 700;
+}
+.substep__description {
+    margin-left: 10px;
+    color: rgb(62, 62, 60);
+    align-items: center;
+}
+.substep__description lightning-input,
+.substep__description lightning-combobox {
+    transform: translateY(-14px);
+    max-height: 56px;
+}
+.substep__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+a.substep__right-text {
+    color: #006dcc;
+}
+.substep__right-text:empty {
+    display: none;
+}
+.slds-progress__item.slds-is-disabled > .slds-progress__item_content {
+    user-select: none;
+}
+.slds-progress__item.slds-is-disabled > .slds-progress__item_content:before {
+    content: "";
+    left: 20px;
+    top: 0;
+    width: calc(100% - 20px);
+    position: absolute;
+    z-index: 20;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.substep__description lightning-helptext {
+    transform: translate(-7px, -10px);
+}
+.substep__description c-adv-combobox[data-name="repo"] {
+    min-width: 300px;
+}

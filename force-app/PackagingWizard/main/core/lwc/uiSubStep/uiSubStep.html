@@ -1,0 +1,124 @@
+<template>
+    <li class={liStyleClass} data-rerender={substepRerender}>
+        <lightning-icon
+            class="slds-icon_container slds-icon-utility-success slds-progress__marker slds-progress__marker_icon slds-progress__marker_icon-success"
+            icon-name="utility:check"
+            size="xx-small"
+            alternative-text="Complete"
+            if:true={valid}
+        ></lightning-icon>
+        <div class="slds-progress__marker" if:false={valid}></div>
+        <div class="slds-progress__item_content slds-grid slds-grid_align-spread" data-name={name}>
+            <div class="substep__data-line slds-grid slds-grid_vertical-align-center slds-size_7-of-12">
+                <span class="substep__title">{title}</span>
+                <span class="substep__description slds-grid slds-wrap">
+                    <template if:true={hasDescription}>
+                        {description}
+                    </template>
+                    <template for:each={advComponents} for:item="cmp">
+                        <template if:true={cmp.hasLoader}>
+                            <c-preloader
+                                key={cmp.id}
+                                width={cmp.loader.width}
+                                height={cmp.loader.height}
+                                class={cmp.loader.className}
+                            >
+                            </c-preloader>
+                        </template>
+                        <template if:false={cmp.hasLoader}>
+                            <lightning-helptext
+                                key={cmp.id}
+                                data-name={cmp.props.name}
+                                content={cmp.props.label}
+                                if:true={cmp.isHelptext}
+                            ></lightning-helptext>
+                            <lightning-combobox
+                                key={cmp.id}
+                                name={cmp.props.name}
+                                label={cmp.props.label}
+                                value={cmp.props.value}
+                                placeholder={cmp.props.placeholder}
+                                data-name={cmp.props.name}
+                                options={cmp.props.options}
+                                class={cmp.props.className}
+                                disabled={cmp.props.disabled}
+                                onchange={handleChangeComponentValue}
+                                required={cmp.props.required}
+                                if:true={cmp.isCombobox}
+                            ></lightning-combobox>
+                            <lightning-button
+                                key={cmp.id}
+                                variant={cmp.props.variant}
+                                label={cmp.props.label}
+                                title={cmp.props.title}
+                                data-name={cmp.props.name}
+                                disabled={cmp.props.disabled}
+                                onclick={handleButtonClick}
+                                if:true={cmp.isButton}
+                                class={cmp.props.className}
+                            ></lightning-button>
+                            <lightning-input
+                                key={cmp.id}
+                                label={cmp.props.label}
+                                data-name={cmp.props.name}
+                                type={cmp.props.type}
+                                required={cmp.props.required}
+                                class={cmp.props.className}
+                                disabled={cmp.props.disabled}
+                                value={cmp.props.value}
+                                onchange={handleChangeComponentValue}
+                                if:true={cmp.isInput}
+                            ></lightning-input>
+                            <c-adv-combobox
+                                key={cmp.id}
+                                label={cmp.props.label}
+                                data-name={cmp.props.name}
+                                class={cmp.props.className}
+                                value={cmp.props.value}
+                                placeholder={cmp.props.placeholder}
+                                options={cmp.props.options}
+                                disabled={cmp.props.disabled}
+                                onchange={handleChangeComponentValue}
+                                onbuttonclick={handleButtonClick}
+                                if:true={cmp.isAdvCombobox}
+                            >
+                            </c-adv-combobox>
+                        </template>
+                    </template>
+                </span>
+            </div>
+            <div class="slds-grid slds-grid_align-end slds-size_5-of-12 substep__right">
+                <template if:true={hasRightButton}>
+                    <lightning-button
+                        key={advRightButton.id}
+                        variant={advRightButton.props.variant}
+                        label={advRightButton.props.label}
+                        title={advRightButton.props.title}
+                        data-name={advRightButton.props.name}
+                        disabled={advRightButton.props.disabled}
+                        onclick={handleRightButtonClick}
+                        if:false={advRightButton.hasLoader}
+                        class={advRightButton.props.className}
+                    ></lightning-button>
+                    <c-preloader
+                        if:true={advRightButton.hasLoader}
+                        width={advRightButton.loader.width}
+                        height={advRightButton.loader.height}
+                        class={advRightButton.loader.className}
+                    ></c-preloader>
+                </template>
+                <template if:true={hasRightText}>
+                    <template if:false={loading}>
+                        <a class={rightTextCls} href={rightText.link} target="_blank" if:false={rightTextIsText}>
+                            {rightText.label}
+                        </a>
+                        <p class={rightTextCls} if:true={rightTextIsText}>
+                            {rightText}
+                        </p>
+                    </template>
+                    <c-preloader if:true={loading} class="slds-m-top_medium" width="150px" height="19px"></c-preloader>
+                </template>
+            </div>
+        </div>
+    </li>
+</template>

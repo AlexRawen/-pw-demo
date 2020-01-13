@@ -1,0 +1,17 @@
+:host {
+    display: block;
+    margin-top: -14px;
+}
+.slds-combobox.slds-dropdown-trigger:not(.slds-is-open) .slds-popover {
+    display: none;
+}
+.slds-combobox.slds-dropdown-trigger .slds-popover {
+    position: absolute;
+    top: 100%;
+}
+.slds-popover__body {
+    padding: 0;
+}
+.slds-popover__footer {
+    padding: 0;
+}

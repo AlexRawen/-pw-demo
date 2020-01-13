@@ -1,0 +1,25 @@
+:host {
+    display: block;
+}
+
+
+article > .slds-setup-assistant__step-summary {
+    margin-left: 24px;
+}
+
+.slds-setup-assistant__item {
+    padding: 20px 2rem;
+    position: relative;
+}
+.slds-setup-assistant__item.slds-theme--alert-texture:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+}
+.slds-setup-assistant__item.slds-theme--alert-texture > * {
+    opacity: 0.3;
+}

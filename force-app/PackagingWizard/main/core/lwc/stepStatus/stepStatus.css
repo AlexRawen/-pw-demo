@@ -1,0 +1,4 @@
+.slds-progress-ring_large:not(.slds-progress-ring_complete):not(.slds-progress-ring_active-step)
+    .slds-progress-ring__path {
+    opacity: 0;
+}
