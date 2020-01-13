@@ -1,0 +1,23 @@
+:host {
+    position: relative;
+    padding: 0;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #dddbda;
+    border-radius: 0.25rem;
+    background-clip: padding-box;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+}
+
+.slds-progress-bar_circular .slds-progress-bar__value {
+    transition: .3s width ease-out;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background: #f3f2f2;
+}

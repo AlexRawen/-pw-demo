@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>HerokuSandbox</label>
+    <protected>true</protected>
+    <values>
+        <field>ClientId__c</field>
+        <value xsi:type="xsd:string">4424faa3-7dca-47c1-beb9-a13d622d386a</value>
+    </values>
+    <values>
+        <field>ClientSecret__c</field>
+        <value xsi:type="xsd:string">c74257c2-b763-4df2-81b1-593ada8f03b9</value>
+    </values>
+</CustomMetadata>
